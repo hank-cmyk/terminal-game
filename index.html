@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> // terminal </title>
+    
+    <link rel="stylesheet" type="text/css" href="styles/site.css"/>
+
+    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"> </script>
+    <script src="scripts/user-input.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+    <div id = 'intro' class = 'event'>
+      <nav><li><a href='index.html'>start over</a></li></nav>
+
+        <h1> hello world </h1>
+
+        
+        <a href = "#intro2"> hello </a>
+
+    </div>
+
+    <div id = 'intro2' class = 'event'>
+      <h2> oh, you answered! it's nice to hear a response ^_^ </h2>
+      <a href = '#intro3'> who are you? </a>
+    </div>
+
+    <div id = 'intro3' class = 'event'>
+      <h2> what do you mean? </h2>
+      <p> and anyways, i could ask you the same. </p>
+      <a href = '#who-are-you'> hm. sure. </a>
+    </div>
+
+    <!-- the start of  user input shenanigans -->
+    <div id = 'who-are-you' class = 'event'>
+      <nav><li><a href='index.html'>start over</a></li></nav>
+      <h2> so. who are you? </h2>
+
+      <form id = 'input-form'  >
+        <input type = 'text' name = 'playerName' minlength = '1' required/>
+        <button type="submit">enter this name</button>
+       
+        
+      </form>
+      
+      <!-- <div id = 'submit-input' class = 'event'></div> -->
+        <p>your name is...<span class="player"></span>?</p>
+        
+
+        <a href = '#yes-name'> yes</a>
+
+    
+    </div>
+
+    <div id = 'yes-name' class = 'event'>
+      <p>are you satisfied with who you are?</p>
+
+      <a href = '#check-name-yes'> yes </a></p>
+      <a href = '#check-name-no'> no </a></p>
+    </div>
+
+    <div id = 'check-name-yes' class = 'event'>
+      <h2> oh, i'm glad! that's good to hear. let's begin then, shall we? </h2>
+      <a href = '#one'> okay </a>
+    </div>
+
+    <div id = 'check-name-no' class = 'event'>
+      <h2> i'm sorry. </h2>
+      <p>i can't help with that entirely. but i can send you back, if you want? </p>
+      <li><a href = '#who-are-you'> alright </a>
+      <li><a href = '#check-name-yes'> no. i'll just continue.  </a>
+    </div>
+
+
+    <div id = 'one' class = 'event'>
+      <li><a href='index.html'>start over</a></li>
+      <!-- <p> Here we are. I've said that already, but it still stands. Here we are, you and I. 
+        There is a lot to say, there is a lot to get through, there is always so much, and yet- 
+        I don't know how to begin. How do I begin, <span class="player"></span>? Will you tell me? 
+        Please tell me.</p> -->
+      
+      <p> well, here we are. there's a lot to say and i'm not sure how to begin. tell me, 
+        <span class='player'></span>. take this as practice for your choices. will you tell me 
+        how to begin?
+      </p>
+
+      <li><a href = #start-talking> just start talking </a>
+      <li><a href = #idk> i don't know. </a>
+
+    </div>
+
+    <div id = 'start-talking' class = 'event'>
+      <nav><li><a href='index.html'>start over</a></li></nav>
+      <!-- <p>
+      That's a little curt of you, <span class="player"></span>, don't you think? It was
+      better than the vagueness of the other 
+      option though, I'll give you that. Alright then, I'll just start.
+      I want you to get used to making options for me. I cannot change who I am, 
+      I cannot change the outcome of this. But I want to try. 
+      I am lonely, you see. I called you curt for just telling me to start speaking, 
+      and for the hypocrisy I practiced, and that I will indubitably continue, 
+      I would like to apologize. One more thing, before I really begin.
+      </p> -->
+
+      <p> that's a little curt of you, <span class='player'></span>, don't you think? okay. 
+      actually, sorry. </p>
+      <h2> will you forgive me? </h2>
+
+    </div>
+
+    <div id = 'idk' class = 'event'>
+      <nav><li><a href='index.html'>start over</a></li></nav>
+      <!-- <p>
+      Thank you for answering truthfully, at least this first time. I don't know either. 
+      I don't know much, and if you had been curt with me, I would have simply asked for forgiveness.
+      Here is the truth- I don't know what I am supposed to be doing here. 
+      I am here, and you, <span id='resultingInput'></span> are here as well. 
+      We are together in this, and yet I feel lonely even still. 
+      So I don't know what I'm doing. And you don't know what you're doing. 
+      And this question was supposed to be something simpler, 
+      but I don't know where to go from this. I don't know what to do in this.
+      </p> -->
+      <p>oh, well thanks for answering truthfully i guess. at least this first time. 
+        i don't know either. but if we are together in this state of not knowing, then- i feel better. 
+        thank you, <span class='player'></span>.
+      </p>
+
+    </div>
+
+
+    
+</body>
+
+</html>
